@@ -9,4 +9,8 @@ public class QuickFind {
             id[i] = i;
         }
     }
+
+    public int[] getId() {
+        return id;
+    }
 }
