@@ -23,6 +23,10 @@ public class Main {
                 System.out.println(index + " " + id);
                 index++;
             }
+            System.out.println("0 and 3 connected: " + quickFind.connected(0, 3));
+            System.out.println("0 and 9 connected: " + quickFind.connected(0, 9));
+            System.out.println("1 and 2 connected: " + quickFind.connected(1, 2));
+            System.out.println("4 and 9 connected: " + quickFind.connected(4, 9));
         } catch (IOException e) {
             e.printStackTrace();
         }
