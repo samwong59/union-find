@@ -8,9 +8,13 @@ public class Main {
         try {
             File problem = new File("tinyQF.txt");
             Scanner fileReader = new Scanner(problem);
+            QuickFind quickFind = new QuickFind(fileReader.nextInt());
             while (fileReader.hasNextInt()) {
-                //System.out.println(fileReader.nextInt());
+                quickFind.union(fileReader.nextInt(), fileReader.nextInt());
             }
+//            for (int id : quickFind.getId()) {
+//                System.out.print(id);
+//            }
         } catch (IOException e) {
             e.printStackTrace();
         }
