@@ -10,11 +10,13 @@ public class Main {
             Scanner fileReader = new Scanner(problem);
             QuickFind quickFind = new QuickFind(fileReader.nextInt());
             while (fileReader.hasNextInt()) {
-                quickFind.union(fileReader.nextInt(), fileReader.nextInt());
+                int p = fileReader.nextInt();
+                int q = fileReader.nextInt();
+                if (!quickFind.connected(p, q)) {
+                    quickFind.union(fileReader.nextInt(), fileReader.nextInt());
+                }
             }
-//            for (int id : quickFind.getId()) {
-//                System.out.print(id);
-//            }
+//
         } catch (IOException e) {
             e.printStackTrace();
         }
