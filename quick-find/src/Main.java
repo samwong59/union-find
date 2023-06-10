@@ -18,11 +18,11 @@ public class Main {
                     System.out.println(p + " " + q + " connected.");
                 }
             }
-//            int index = 0;
-//            for (int id : quickFind.getId()) {
-//                System.out.println(index + " " + id);
-//                index++;
-//            }
+            int index = 0;
+            for (int id : quickFind.getId()) {
+                System.out.println(index + " " + id);
+                index++;
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
