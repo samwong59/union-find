@@ -14,6 +14,7 @@ public class Main {
                 int q = fileReader.nextInt();
                 if (!quickFind.connected(p, q)) {
                     quickFind.union(fileReader.nextInt(), fileReader.nextInt());
+                    System.out.println(p + " " + "q" + " connected.");
                 }
             }
 //
