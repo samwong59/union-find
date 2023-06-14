@@ -8,4 +8,11 @@ public class QuickUnion {
             id[i] = i;
         }
     }
+
+    private int root(int i) {
+        while (id[i] != i) {
+            i = id[i];
+        }
+        return i;
+    }
 }
