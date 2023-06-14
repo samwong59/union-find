@@ -19,4 +19,10 @@ public class QuickUnion {
     public boolean connected(int p, int q) {
         return root(p) == root(q);
     }
+
+    public void union(int p, int q) {
+        int i = root(p);
+        int j = root(q);
+        id[i] = j;
+    }
 }
