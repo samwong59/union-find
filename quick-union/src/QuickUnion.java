@@ -25,4 +25,8 @@ public class QuickUnion {
         int j = root(q);
         id[i] = j;
     }
+
+    public int[] getId() {
+        return id;
+    }
 }
