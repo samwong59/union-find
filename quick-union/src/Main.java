@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try {
-            File problem = new File("tinyQF.txt");
+            File problem = new File("tinyQU.txt");
             Scanner fileReader = new Scanner(problem);
             int N = fileReader.nextInt();
             QuickUnion quickUnion = new QuickUnion(N);
