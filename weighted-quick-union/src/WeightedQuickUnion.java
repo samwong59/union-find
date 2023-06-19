@@ -35,4 +35,8 @@ public class WeightedQuickUnion {
         }
     }
 
+    public int[] getId() {
+        return id;
+    }
+
 }
