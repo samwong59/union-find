@@ -11,5 +11,12 @@ public class WeightedQuickUnion {
             size[i] = 1;
         }
     }
-    
+
+    private int root(int i) {
+        while (i != id[i]) {
+            i = id[i];
+        }
+        return i;
+    }
+
 }
