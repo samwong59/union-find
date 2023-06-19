@@ -18,8 +18,11 @@ public class Main {
                 }
             }
             int index = 0;
-            for (int id : weightedQuickUnion.getId()) {
-                System.out.println(index + " " + id);
+            System.out.println("Object | ID | Size");
+            int[] id = weightedQuickUnion.getId();
+            int[] size = weightedQuickUnion.getSize();
+            while (index < N) {
+                System.out.println(index + " | " + id[index] + " | " + size[index]);
                 index++;
             }
             System.out.println("0 and 3 connected: " + weightedQuickUnion.connected(0, 3));
