@@ -31,12 +31,16 @@ public class WeightedQuickUnion {
             size[j] += size[i];
         } else {
             id[j] = i;
-            size[j] += size[i];
+            size[i] += size[j];
         }
     }
 
     public int[] getId() {
         return id;
+    }
+
+    public int[] getSize() {
+        return size;
     }
 
 }
