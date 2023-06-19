@@ -23,5 +23,16 @@ public class WeightedQuickUnion {
         return root(p) == root(q);
     }
 
+    public void union(int p, int q) {
+        int i = root(p);
+        int j = root(q);
+        if (size[i] < size[j]) {
+            id[i] = j;
+            size[j] += size[i];
+        } else {
+            id[j] = i;
+            size[j] += size[i];
+        }
+    }
 
 }
