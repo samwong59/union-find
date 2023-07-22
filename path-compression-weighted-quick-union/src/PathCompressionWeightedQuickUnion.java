@@ -20,11 +20,11 @@ public class PathCompressionWeightedQuickUnion {
         return i;
     }
 
-    private boolean find(int p, int q) {
+    public boolean connected(int p, int q) {
         return root(p) == root(q);
     }
 
-    private void union(int p, int q) {
+    public void union(int p, int q) {
         int i = root(p);
         int j = root(q);
         if (sz[i] < sz[j]) {
