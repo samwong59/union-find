@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try {
-            File problem = new File("tinyQF.txt");
+            File problem = new File("tinyPCWQU.txt");
             Scanner fileReader = new Scanner(problem);
             int N = fileReader.nextInt();
             PathCompressionWeightedQuickUnion pCWQU = new PathCompressionWeightedQuickUnion(N);
