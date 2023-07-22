@@ -35,4 +35,8 @@ public class PathCompressionWeightedQuickUnion {
             sz[i] += sz[j];
         }
     }
+
+    public int[] getId() {
+        return id;
+    }
 }
